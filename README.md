@@ -1,6 +1,8 @@
 # dump
 Drop array, objects, variable or scripting code.
+
 Einfach Variabel, Massiv, Objekt oder irgendwelchen Kode ansehen.
+
 Вывод переменной, массива, объекта или другого кода для удобного просмотра
 
 EN
