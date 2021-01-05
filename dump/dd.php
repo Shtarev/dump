@@ -3,7 +3,7 @@
 * Drop array, objects, variable or scripting code.
 * Visual:this script in part used a theme code-prettify.
 */
-require (__DIR__.'\config.php');
+require (__DIR__.'/config.php');
 
 function dd($var, $die=false){
 	if(is_array($var) || is_object($var)){
