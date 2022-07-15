@@ -1,24 +1,25 @@
 # dump
-Drop array, objects, variable or scripting code.
+﻿Drop array, objects, variable or scripting code.
 Einfach Variabel, Massiv, Objekt oder irgendwelchen Kode ansehen.
 Вывод переменной, массива, объекта или другого кода для удобного просмотра
 
 EN
-1) load a folder dump into any directory
-2) include a file dd.php
-3) to cause dd ($var); or dd ($var, true);
+1) put the folder somewhere, for example in the vendor
+2) connect to index.php (for example: require (__ DIR __. '/vendor/dump/dd.php');)
+3) dd($var, true); or dd($var, true); anywhere
+- - - - - - - - - - - - - - - - - - - - - - - 
+to cause dd ($var); or dd ($var, true);
 $var - that look
 ***********************************************************************************
 DE
-1) Laden Sie der Ordner 'dump' in ganz egal welche Directory
-2) Anschalten Sie die File 'dd.php' z.B. require('/dir1/dir2/dir3/dir4/dir5/dump/dd.php');
-3) Nutzen Sie einfach dd ($var); oder dd ($var, true);
-$var - Was moechten Sie ansehen (Variabel, das Massiv, das Objekt oder irgendwelchen Kode)
+1) legen wir den Ordner irgendwo hin, zum Beispiel in vendor
+2) verbinden wir mit index.php (z.B.: require (__ DIR __. '/vendor/dump/dd.php');)
+3) schreben dd ($var); or dd ($var, true); Überall
 ***********************************************************************************
 RU
-1) Закинуть папку 'dump' в любую директорию
-2) Подключить файл 'dd.php' например так: require('/dir1/dir2/dir3/dir4/dir5/dump/dd.php');
-3) Вызовите функцию dd 
+1) кладем папку куда-нибудь, например в vendor
+2) подключаем в index.php (например: require(__DIR__ . '/vendor/dump/dd.php');)
+3) Вызовите функцию dd() в любом месте
 так: dd ($var);
 так: dd ($var, true); - если хотите остановить работу скрипта после распечатки кода.
 
