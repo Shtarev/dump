@@ -5,9 +5,8 @@ Einfach Variabel, Massiv, Objekt oder irgendwelchen Kode ansehen.
 EN
 1) put the folder dump somewhere, for example in the vendor
 2) connect to index.php (for example: require (__ DIR __. '/vendor/dump/dd.php');)
-3) dd($var, true); or dd($var, true); anywhere
-- - - - - - - - - - - - - - - - - - - - - - - 
-to cause dd ($var); or dd ($var, true);
+3) dd($var); or dd($var, true); anywhere
+
 $var - that look
 ***********************************************************************************
 DE
