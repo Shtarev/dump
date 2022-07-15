@@ -5,22 +5,22 @@
 */
 require (__DIR__.'/config.php');
 
-function dd($var, $die=false){
+function dd($var, $die = false, $file = __FILE__, $line = __LINE__){
 	if(is_array($var) || is_object($var)){
 		if($die==false){
-			echo ("<pre class=\"prettyprint\" id=\"quine\">".print_r($var, true)."</pre>");
+			echo ("<pre class=\"prettyprint\" id=\"quine\">".print_r($var, true)."<hr>Файл — ".$file."<br>Строка — ".$line."</pre>");
 		} 
 		else {
-			die ("<pre class=\"prettyprint\" id=\"quine\">".print_r($var, true)."</pre>");
+			die ("<pre class=\"prettyprint\" id=\"quine\">".print_r($var, true)."<hr>Файл — ".$file."<br>Строка — ".$line."</pre>");
 		}
 	}
 	else{
 		$var = htmlspecialchars($var);
 		if($die==false){
-			echo "<pre class=\"prettyprint\" id=\"quine\">".$var."</pre>";
+			echo ("<pre class=\"prettyprint\" id=\"quine\">".$var."<hr>Файл — ".$file."<br>Строка — ".$line."</pre>");
 		}
 		else{
-			die ("<pre class=\"prettyprint\" id=\"quine\">".$var."</pre>");
+			die ("<pre class=\"prettyprint\" id=\"quine\">".$var."<hr>Файл — ".$file."<br>Строка — ".$line."</pre>");
 		}
 	}
 }
